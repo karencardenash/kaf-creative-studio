@@ -1,0 +1,347 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>KAF Creative Studio</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Portafolio de Karen Cárdenas: dirección creativa, producción audiovisual y fotografía.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..700;1,6..96,400..700&family=Hanken+Grotesk:ital,wght@0,300..700;1,300..700&family=Pinyon+Script&display=swap">
+<style>
+:root{
+  --ink:#000000; --ink-2:#0b0809; --ink-3:#171011;
+  --paper:#e7e5e0; --paper-dim:#b4b0aa;
+  --red:#d8171d; --red-hot:#ff3b36; --red-deep:#8e1014;
+  --line:rgba(231,229,224,.16);
+  --display:'Bodoni Moda','Didot','Bodoni 72',Georgia,serif;
+  --cond:'Anton','Impact','Arial Narrow',sans-serif;
+  --script:'Pinyon Script','Snell Roundhand','Apple Chancery',cursive;
+  --body:'Hanken Grotesk',system-ui,-apple-system,'Segoe UI',sans-serif;
+  color-scheme:dark;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--ink);color:var(--paper);font:300 1rem/1.7 var(--body);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:40;background:var(--ink)}
+img{display:block;max-width:100%}
+a{color:inherit}
+h1,h2,h3,h4,p,figure,ul,ol,dl,dd{margin:0}
+ul,ol{padding:0;list-style:none}
+:focus-visible{outline:2px solid var(--red-hot);outline-offset:3px}
+section[id]{scroll-margin-top:4.2rem}
+.wrap{width:100%;max-width:1180px;margin-inline:auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.star{width:1em;height:1em;fill:currentColor;flex:none}
+.ico{width:1.15em;height:1.15em;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;flex:none}
+.ico--fill{fill:currentColor;stroke:none}
+
+/* ── barra superior ── */
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:30;background:var(--ink);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:1rem;min-height:3.6rem}
+.top__logo img{height:2.15rem;width:auto}
+.top nav{display:flex;gap:clamp(.9rem,3vw,2rem)}
+.top nav a{font-size:.74rem;letter-spacing:.2em;text-transform:uppercase;text-decoration:none;font-weight:500;color:var(--paper-dim);padding:.5rem 0;transition:color .2s}
+.top nav a:hover{color:var(--red-hot)}
+
+/* ── portada y contacto: escenario con visor de cámara ── */
+.stage{position:relative;overflow:hidden;background:var(--ink) url(img/hero-bg.jpg) center/cover no-repeat;padding-block:clamp(5.5rem,13vw,10rem)}
+.stage .wrap{position:relative;z-index:2;display:flex;flex-direction:column;align-items:center;text-align:center;gap:clamp(1rem,2.4vw,1.6rem)}
+.logo{width:min(520px,78vw);height:auto}
+.divider{display:flex;align-items:center;gap:.9rem;width:min(520px,78vw);color:var(--red)}
+.divider::before,.divider::after{content:"";height:1px;flex:1;background:var(--red)}
+.divider .star{width:1.15rem;height:1.15rem}
+.h1{font-family:var(--display);font-weight:400;font-size:clamp(2.7rem,10.5vw,6.8rem);line-height:1;letter-spacing:.015em;text-transform:uppercase}
+.services{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:.35rem .8rem;font-family:var(--display);font-weight:500;font-size:clamp(.95rem,2.4vw,1.35rem)}
+.services .star{color:var(--red-hot);width:.7em;height:.7em}
+.vf{position:absolute;z-index:2;width:clamp(44px,8vw,112px);height:clamp(44px,8vw,112px);border:0 solid var(--red);pointer-events:none}
+.vf--tl{top:clamp(14px,4.5vw,64px);left:clamp(14px,4.5vw,64px);border-top-width:6px;border-left-width:6px}
+.vf--tr{top:clamp(14px,4.5vw,64px);right:clamp(14px,4.5vw,64px);border-top-width:6px;border-right-width:6px}
+.vf--bl{bottom:clamp(14px,4.5vw,64px);left:clamp(14px,4.5vw,64px);border-bottom-width:6px;border-left-width:6px}
+.vf--br{bottom:clamp(14px,4.5vw,64px);right:clamp(14px,4.5vw,64px);border-bottom-width:6px;border-right-width:6px}
+.planet{display:none;position:absolute;border-radius:50%;pointer-events:none;z-index:1;
+  background:radial-gradient(circle at 30% 70%,#2a2524 0,#0d0b0b 36%,#000 72%)}
+@media (min-width:820px){
+  .stage{background-image:none}
+  .planet{display:block}
+  .planet--a{width:66vmax;height:66vmax;top:-47vmax;right:-17vmax;
+    box-shadow:0 0 0 2px rgba(255,86,74,.95),0 0 24px 3px rgba(255,40,30,.65),0 0 120px 20px rgba(216,23,29,.26),inset 16px -16px 56px -8px rgba(255,64,52,.55)}
+  .planet--b{width:62vmax;height:62vmax;bottom:-45vmax;left:-15vmax;
+    box-shadow:0 0 0 2px rgba(255,86,74,.95),0 0 24px 3px rgba(255,40,30,.65),0 0 120px 20px rgba(216,23,29,.26),inset -16px 16px 56px -8px rgba(255,64,52,.55)}
+}
+
+/* ── sobre mí ── */
+.about-sec{padding-block:clamp(3.5rem,9vw,7rem);overflow-x:clip;background:var(--ink)}
+.sobre{display:flex;align-items:baseline;gap:.04em;font-family:var(--cond);font-weight:400;text-transform:uppercase;font-size:clamp(3.4rem,13vw,7.6rem);line-height:1;letter-spacing:.01em;position:relative;width:max-content;max-width:100%}
+.sobre .m{font-family:var(--script);text-transform:none;font-size:1.35em;line-height:.6;margin-inline:.02em -.02em;letter-spacing:0}
+.sobre .swoosh{position:absolute;left:-2%;bottom:-.34em;width:104%;height:.62em}
+.swoosh{fill:none;stroke:var(--red);stroke-linecap:round;overflow:visible}
+.about{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:clamp(1.5rem,5vw,4.5rem);align-items:center;margin-top:clamp(2.5rem,6vw,4.5rem)}
+.portrait{position:relative;width:100%;max-width:430px;aspect-ratio:3/4;margin-inline:auto}
+.portrait img{position:relative;z-index:2;width:100%;height:100%;object-fit:contain;object-position:bottom}
+.ring{position:absolute;z-index:1;left:-22%;top:34%;width:144%;height:auto;fill:none;stroke:var(--paper);stroke-width:3;color:var(--paper)}
+.portrait .star--big{position:absolute;z-index:3;left:-9%;bottom:6%;width:clamp(48px,9vw,86px);height:clamp(48px,9vw,86px);color:var(--red)}
+.name{font-family:var(--display);font-weight:500;font-size:clamp(3.3rem,10.5vw,8rem);line-height:.88;letter-spacing:-.035em;text-wrap:balance}
+.name span{display:block}
+.name span+span{padding-left:.85em}
+.bio{margin-top:clamp(1.4rem,3vw,2.2rem);max-width:56ch;font-size:clamp(1rem,1.4vw,1.1rem);line-height:1.85;letter-spacing:.02em;color:var(--paper)}
+
+/* ── proyectos: banda con el patrón del portafolio ── */
+.band{position:relative;padding-block:clamp(3.5rem,9vw,6.5rem);background:linear-gradient(rgba(0,0,0,.72),rgba(0,0,0,.84)),url(img/pattern.jpg) center/cover;border-block:1px solid var(--line)}
+.band__title{font-family:var(--display);font-weight:400;font-size:clamp(2.6rem,8vw,5.4rem);line-height:1;letter-spacing:.01em;margin-bottom:clamp(1.8rem,4vw,3rem);display:flex;align-items:center;gap:.8rem}
+.band__title .star{color:var(--red);width:.4em;height:.4em}
+.index{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:clamp(.8rem,2vw,1.6rem)}
+.card{display:flex;flex-direction:column;gap:.25rem;text-decoration:none;min-width:0}
+.card img{width:100%;aspect-ratio:2/3;object-fit:cover;margin-bottom:.6rem;box-shadow:0 18px 40px -18px rgba(0,0,0,.9);transition:transform .35s ease,box-shadow .35s ease}
+.card:hover img,.card:focus-visible img{transform:translateY(-6px);box-shadow:0 26px 46px -18px rgba(216,23,29,.45)}
+.card__kind{font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;font-weight:600;color:var(--red-hot)}
+.card__title{font-family:var(--display);font-weight:500;font-size:clamp(1.05rem,2vw,1.4rem);line-height:1.15}
+
+/* ── ficha de proyecto ── */
+.project{padding-block:clamp(3.5rem,9vw,7rem);overflow-x:clip}
+.project:nth-of-type(even){background:var(--ink-2)}
+.p-head{display:grid;grid-template-columns:minmax(0,4fr) minmax(0,6fr);gap:clamp(1.6rem,5vw,4.5rem);align-items:start}
+.poster{width:100%;max-width:460px}
+.poster img{width:100%;height:auto;box-shadow:0 30px 70px -30px rgba(216,23,29,.35),0 0 0 1px var(--line)}
+.p-text{display:flex;flex-direction:column;gap:1.1rem;min-width:0}
+.tag{font-size:.74rem;letter-spacing:.24em;text-transform:uppercase;font-weight:600;color:var(--red-hot)}
+.p-title{font-family:var(--display);font-weight:500;font-size:clamp(2.5rem,7vw,5rem);line-height:.98;letter-spacing:-.02em;text-wrap:balance}
+.p-sub{font-family:var(--display);font-style:italic;font-weight:400;font-size:clamp(1.1rem,2.4vw,1.6rem);color:var(--paper-dim);margin-top:-.4rem}
+.label{display:flex;align-items:center;gap:.7rem;font-family:var(--display);font-weight:400;font-size:clamp(1.6rem,3.2vw,2.2rem);line-height:1.1;margin-top:.8rem}
+.label .star{color:var(--red);width:.55em;height:.55em}
+.sublabel{font-size:.74rem;letter-spacing:.24em;text-transform:uppercase;font-weight:600;color:var(--paper-dim);margin:clamp(1.8rem,4vw,2.6rem) 0 1rem}
+.syn{display:flex;flex-direction:column;gap:1rem;max-width:62ch;font-style:italic;font-size:clamp(.98rem,1.4vw,1.06rem);line-height:1.85;letter-spacing:.025em;color:var(--paper)}
+.blurb{max-width:62ch;margin-top:.6rem;padding-top:1.3rem;border-top:1px solid var(--line);font-family:var(--display);font-weight:400;font-size:clamp(1.05rem,1.7vw,1.22rem);line-height:1.6;color:var(--paper)}
+.block{margin-top:clamp(2.8rem,6vw,4.6rem)}
+.block .label{margin-top:0;margin-bottom:1.3rem}
+.pre--split{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:clamp(1.2rem,3.5vw,2.8rem);align-items:start}
+.paper{background:#f4f3ef}
+.paper img{width:100%;height:auto}
+.paper--solo{max-width:880px}
+.shots{display:flex;flex-direction:column;counter-reset:plano}
+.shot{counter-increment:plano;display:grid;grid-template-columns:auto 1fr;column-gap:.9rem;row-gap:.1rem;padding:.8rem 0;border-bottom:1px solid var(--line)}
+.shot:first-child{padding-top:0}
+.shot::before{content:"Plano " counter(plano);grid-column:1/-1;font-size:.66rem;letter-spacing:.22em;text-transform:uppercase;color:var(--paper-dim);font-weight:500}
+.shot__code{font-family:var(--cond);letter-spacing:.06em;font-size:.95rem;color:var(--red-hot);align-self:baseline;min-width:2.1em}
+.shot__what{font-family:var(--display);font-size:1.08rem;line-height:1.35}
+.shot__sound{grid-column:2;font-size:.82rem;letter-spacing:.04em;color:var(--paper-dim);font-style:italic}
+.moodgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(.5rem,1.4vw,1rem)}
+.tile{position:relative;margin:0;background:var(--ink-3);overflow:hidden;min-width:0}
+.tile img{width:100%;height:100%;object-fit:cover}
+.tile.mood{aspect-ratio:1/1}
+.tile.mood figcaption{position:absolute;inset:auto 0 0;padding:1.6rem .8rem .6rem;background:linear-gradient(transparent,rgba(0,0,0,.85));font-size:.68rem;letter-spacing:.22em;text-transform:uppercase;font-weight:600}
+.collage{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(.5rem,1.4vw,1rem)}
+.collage .half{aspect-ratio:1/1}
+.collage .full{grid-column:1/-1;aspect-ratio:16/7}
+.collage--stills{grid-template-columns:repeat(6,minmax(0,1fr))}
+.collage--stills .third{grid-column:span 2;aspect-ratio:1/1}
+.collage--stills .half{grid-column:span 3}
+.collage--stills .full{grid-column:1/-1}
+.collage .tile figcaption{position:absolute;inset:auto 0 0;padding:2rem .9rem .75rem;background:linear-gradient(transparent,rgba(0,0,0,.88));font-size:.78rem;letter-spacing:.06em;line-height:1.45}
+.block--crew{display:grid;grid-template-columns:minmax(0,6fr) minmax(0,5fr);gap:clamp(1.5rem,5vw,4rem);align-items:center;padding-top:clamp(2rem,4vw,3rem);border-top:1px solid var(--line)}
+.crew{display:flex;flex-direction:column;gap:1.15rem}
+.crew__row{display:flex;flex-direction:column;gap:.1rem}
+.crew dt{font-size:.7rem;letter-spacing:.22em;text-transform:uppercase;font-weight:600;color:var(--red-hot)}
+.crew dd{font-family:var(--display);font-size:clamp(1.15rem,2.2vw,1.5rem);line-height:1.3}
+.watch{position:relative;display:flex;align-items:center;gap:1.1rem;padding:clamp(1.3rem,3vw,2rem);text-decoration:none;border:1px solid var(--line);background:var(--ink);transition:border-color .25s,background .25s}
+.watch::before,.watch::after{content:"";position:absolute;width:22px;height:22px;border:0 solid var(--red)}
+.watch::before{top:-1px;left:-1px;border-top-width:3px;border-left-width:3px}
+.watch::after{bottom:-1px;right:-1px;border-bottom-width:3px;border-right-width:3px}
+.watch:hover{border-color:var(--red);background:var(--ink-3)}
+.watch__play{display:grid;place-items:center;width:3.4rem;height:3.4rem;border-radius:50%;background:var(--red);color:var(--paper);flex:none;font-size:1.3rem}
+.watch__txt{display:flex;flex-direction:column;flex:1;min-width:0}
+.watch__txt b{font-family:var(--display);font-weight:500;font-size:clamp(1.3rem,2.6vw,1.7rem);line-height:1.1}
+.watch__txt small{font-size:.8rem;letter-spacing:.08em;color:var(--paper-dim)}
+.watch>.ico{font-size:1.4rem;color:var(--red-hot)}
+
+/* ── contacto ── */
+.contact{padding-block:clamp(5rem,12vw,9rem)}
+.contact .h2{font-family:var(--display);font-weight:400;font-size:clamp(2.4rem,8vw,4.6rem);line-height:1;text-transform:uppercase;letter-spacing:.02em}
+.clist{display:flex;flex-direction:column;gap:.9rem;width:min(640px,100%);text-align:left;margin-top:.6rem}
+.crow{display:flex;align-items:center;gap:.9rem;padding:.9rem 1rem;background:rgba(0,0,0,.72);border:1px solid var(--line);flex-wrap:wrap}
+.crow__ico{display:grid;place-items:center;width:2.4rem;height:2.4rem;flex:none}
+.crow__ico svg{width:1.5rem;height:1.5rem;fill:none;stroke:var(--paper);stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+.crow__body{display:flex;flex-direction:column;flex:1;min-width:11rem}
+.crow__body small{font-size:.64rem;letter-spacing:.22em;text-transform:uppercase;color:var(--red-hot);font-weight:600}
+.crow__val{font-family:var(--display);font-size:clamp(1.05rem,3.6vw,1.5rem);line-height:1.3;overflow-wrap:anywhere;user-select:all}
+.mini{font:600 .68rem/1 var(--body);letter-spacing:.18em;text-transform:uppercase;text-decoration:none;color:var(--paper);background:transparent;border:1px solid var(--line);padding:.7rem .85rem;cursor:pointer;transition:border-color .2s,color .2s,background .2s}
+.mini:hover{border-color:var(--red-hot);color:var(--red-hot)}
+.foot{padding:1.6rem 0 2.2rem;border-top:1px solid var(--line);font-size:.78rem;letter-spacing:.08em;color:var(--paper-dim);text-align:center}
+
+@media (max-width:820px){
+  .about,.p-head,.pre--split,.block--crew{grid-template-columns:minmax(0,1fr)}
+  .index{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .poster{max-width:360px;margin-inline:auto}
+  .portrait{max-width:340px}
+  .ring{left:-14%;width:128%}
+  .moodgrid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .collage--stills .third{grid-column:span 2}
+  .name{text-align:left}
+  .top__logo img{height:1.9rem}
+}
+@media (max-width:520px){
+  .collage .full{aspect-ratio:16/9}
+  .collage--stills{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .collage--stills .third{grid-column:span 1;aspect-ratio:1/1}
+  .collage--stills .third:last-child{grid-column:1/-1;aspect-ratio:16/9}
+  .collage--stills .half{grid-column:span 1}
+  .crow .mini{padding:.65rem .7rem}
+  .top nav{gap:.85rem}
+  .top nav a{font-size:.66rem;letter-spacing:.14em}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{transition:none!important;animation:none!important}
+}
+@media (prefers-reduced-motion:no-preference){
+  .services .star,.portrait .star--big{animation:twinkle 4.5s ease-in-out infinite}
+  .services li:nth-of-type(4) .star{animation-delay:1.6s}
+  @keyframes twinkle{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.55;transform:scale(.82)}}
+}
+</style>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><symbol id="star" viewBox="0 0 100 100"><path d="M50 0C53 30 70 47 100 50 70 53 53 70 50 100 47 70 30 53 0 50 30 47 47 30 50 0Z"/></symbol></defs></svg>
+<header class="top"><div class="wrap">
+  <a class="top__logo" href="#inicio" aria-label="KAF Creative Studio, ir al inicio"><img src="img/logo.png" alt="KAF Creative Studio"></a>
+  <nav aria-label="Secciones"><a href="#sobre-mi">Sobre mí</a><a href="#proyectos">Proyectos</a><a href="#contacto">Contacto</a></nav>
+</div></header><main>
+<section class="stage" id="inicio" aria-labelledby="h1">
+  <i class="planet planet--a"></i><i class="planet planet--b"></i><i class="vf vf--tl"></i><i class="vf vf--tr"></i><i class="vf vf--bl"></i><i class="vf vf--br"></i>
+  <div class="wrap">
+    <img class="logo" src="img/logo.png" alt="KAF Creative Studio" width="640" height="360">
+    <div class="divider" aria-hidden="true"><svg class="star" aria-hidden="true" viewBox="0 0 100 100"><use href="#star"/></svg></div>
+    <h1 class="h1" id="h1">Portafolio</h1>
+    <ul class="services"><li>Dirección creativa</li><li><svg class="star" aria-hidden="true" viewBox="0 0 100 100"><use href="#star"/></svg></li><li>Producción audiovisual</li><li><svg class="star" aria-hidden="true" viewBox="0 0 100 100"><use href="#star"/></svg></li><li>Fotografía</li></ul>
+  </div>
+</section>
+<section class="about-sec" id="sobre-mi" aria-labelledby="t-sobre">
+  <div class="wrap">
+    <h2 class="sobre" id="t-sobre" aria-label="Sobre mí"><span aria-hidden="true">Sobre</span><span class="m" aria-hidden="true">M</span><span aria-hidden="true">I</span><svg class="swoosh" aria-hidden="true" viewBox="0 0 400 70" preserveAspectRatio="none"><path d="M4 44C110 14 250 8 396 16" stroke-width="7"/><path d="M72 58C180 32 300 26 396 32" stroke-width="5"/><path d="M140 67C230 50 330 44 396 46" stroke-width="3"/></svg></h2>
+    <div class="about">
+      <figure class="portrait">
+        <svg class="ring" aria-hidden="true" viewBox="0 0 600 300"><ellipse cx="300" cy="150" rx="292" ry="92" transform="rotate(-17 300 150)"/></svg>
+        <img src="img/karen.png" alt="Retrato de Karen Cárdenas con blazer negro" width="500" height="667">
+        <svg class="star star--big" aria-hidden="true" viewBox="0 0 100 100"><use href="#star"/></svg>
+      </figure>
+      <div>
+        <p class="name"><span>Karen</span><span>Cárdenas</span></p>
+        <p class="bio">Soy tecnóloga en Modelado y Animación Gráfica y en Procesos Publicitarios, con interés en la dirección y la producción audiovisual. Me enfoco en desarrollar ideas desde su concepto inicial hasta su realización, integrando narrativa, fotografía y lenguaje visual para construir propuestas con identidad propia. Me interesa explorar nuevas formas de contar historias y convertir conceptos en piezas audiovisuales que comuniquen con intención.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="band" id="proyectos" aria-labelledby="t-proyectos">
+  <div class="wrap">
+    <h2 class="band__title" id="t-proyectos">Proyectos<svg class="star" aria-hidden="true" viewBox="0 0 100 100"><use href="#star"/></svg></h2>
+    <nav class="index" aria-label="Índice de proyectos"><a class="card" href="#la-ultima-mirada"><img src="img/poster-ultima.jpg" alt="" loading="lazy" decoding="async"><span class="card__kind">Filminuto psicológico</span><span class="card__title">La última mirada</span></a><a class="card" href="#de-la-mula-al-willys"><img src="img/poster-willys.jpg" alt="" loading="lazy" decoding="async"><span class="card__kind">Documental</span><span class="card__title">De la mula al Willys</span></a><a class="card" href="#cinco-pm"><img src="img/poster-0500.jpg" alt="" loading="lazy" decoding="async"><span class="card__kind">Documental testimonial</span><span class="card__title">05:00 PM</span></a><a class="card" href="#relatos-en-la-cordillera"><img src="img/poster-relatos.jpg" alt="" loading="lazy" decoding="async"><span class="card__kind">Documental</span><span class="card__title">Relatos en la cordillera</span></a></nav>
+  </div>
+</section>
+<section class="project" id="la-ultima-mirada" aria-labelledby="t-la-ultima-mirada">
+  <div class="wrap">
+    <div class="p-head">
+      <figure class="poster"><img src="img/poster-ultima.jpg" alt="Póster de La última mirada: retrato en blanco y negro con un movimiento borroso del rostro" loading="lazy" decoding="async"></figure>
+      <div class="p-text">
+        <p class="tag">Filminuto psicológico</p>
+        <h2 class="p-title" id="t-la-ultima-mirada">La última mirada</h2>
+        
+        <h3 class="label"><svg class="star" aria-hidden="true" viewBox="0 0 100 100"><use href="#star"/></svg><span>Sinopsis</span></h3>
+        <div class="syn"><p>En medio de un bosque al atardecer, Sebastián despierta desorientado, perturbado por un inquietante tic-tac y una voz que repite una misma pregunta: «¿Dónde estás?». Mientras busca desesperadamente su origen, se encuentra con un espejo que parece esconder algo más que su propio reflejo. Lo que comienza como un encuentro desconcertante se transforma en una experiencia cada vez más aterradora, donde las voces se multiplican, el sonido del tiempo se vuelve insoportable y su propia mirada comienza a perder sentido.</p><p>Atrapado entre el miedo y la desesperación, Sebastián intenta escapar de aquello que lo persigue, hasta enfrentarse a una imagen de sí mismo que ya no reconoce. En un último encuentro con el espejo, deberá confrontar el vacío que se oculta detrás de sus ojos, mientras las voces resuenan por última vez.</p></div>
+        <p class="blurb">La última mirada es un filminuto psicológico que explora el miedo, la identidad y la pérdida de conexión con uno mismo, invitando al espectador a cuestionarse qué sucede cuando dejamos de reconocernos en nuestra propia mirada.</p>
+      </div>
+    </div>
+    <div class="block"><h3 class="label"><svg class="star" aria-hidden="true" viewBox="0 0 100 100"><use href="#star"/></svg><span>Preproducción</span></h3><div class="pre pre--split"><figure class="paper"><img src="img/sb-ultima.jpg" alt="Storyboard de La última mirada con seis planos dibujados" loading="lazy" decoding="async"></figure><div><ol class="shots"><li class="shot"><span class="shot__code">PD</span><span class="shot__what">Abre los ojos.</span><span class="shot__sound">Sonido: Ambiente.</span></li><li class="shot"><span class="shot__code">PM</span><span class="shot__what">Se incorpora.</span><span class="shot__sound">Sonido: Tic tac y voz.</span></li><li class="shot"><span class="shot__code">PG</span><span class="shot__what">Busca la voz.</span></li><li class="shot"><span class="shot__code">PG</span><span class="shot__what">Encuentra el espejo.</span></li><li class="shot"><span class="shot__code">PP</span><span class="shot__what">Mira sus ojos con miedo.</span></li><li class="shot"><span class="shot__code">PM / PG</span><span class="shot__what">Retrocede y huye.</span></li></ol></div></div>
+      <h4 class="sublabel">Moodboard</h4><div class="moodgrid"><figure class="tile mood"><img src="img/mu-1.jpg" alt="Figura de pie en un bosque con niebla y rayos de luz" loading="lazy" decoding="async"></figure><figure class="tile mood"><img src="img/mu-2.jpg" alt="Espejo con marco de madera sobre el suelo del bosque" loading="lazy" decoding="async"></figure><figure class="tile mood"><img src="img/mu-3.jpg" alt="Rostro con los ojos abiertos tras las manos" loading="lazy" decoding="async"></figure><figure class="tile mood"><img src="img/mu-4.jpg" alt="Figura borrosa corriendo entre los árboles con luz cálida" loading="lazy" decoding="async"></figure><figure class="tile mood"><img src="img/mu-5.jpg" alt="Troncos retorcidos en un bosque de otoño" loading="lazy" decoding="async"></figure><figure class="tile mood"><img src="img/mu-6.jpg" alt="Persona abrazada a sus rodillas con las manos en la cabeza, en blanco y negro" loading="lazy" decoding="async"></figure></div>
+    </div>
+    <div class="block"><h3 class="label"><svg class="star" aria-hidden="true" viewBox="0 0 100 100"><use href="#star"/></svg><span>Making off</span></h3><div class="collage"><figure class="tile half"><img src="img/bo-u2.jpg" alt="Rodaje en el bosque de bambú: la directora graba con el celular mientras el actor está sentado" loading="lazy" decoding="async"></figure><figure class="tile half"><img src="img/bo-u3.jpg" alt="Rodaje en el bosque: el equipo prepara una toma con el actor" loading="lazy" decoding="async"></figure><figure class="tile full"><img src="img/bo-u1.jpg" alt="Equipo y actor durante una escena entre la vegetación" loading="lazy" decoding="async"></figure></div></div>
+    <div class="block"><h3 class="label"><svg class="star" aria-hidden="true" viewBox="0 0 100 100"><use href="#star"/></svg><span>Fotogramas</span></h3><div class="collage collage--stills"><figure class="tile full"><img src="img/st-u-banner.jpg" alt="Fotograma: Sebastián con las manos en los oídos entre el bambú" loading="lazy" decoding="async"></figure><figure class="tile third"><img src="img/st-u-actor.jpg" alt="Fotograma: Sebastián sentado en el bosque mirando hacia un lado" loading="lazy" decoding="async"></figure><figure class="tile third"><img src="img/st-u-oido.jpg" alt="Fotograma: Sebastián agachado tapándose los oídos" loading="lazy" decoding="async"></figure><figure class="tile third"><img src="img/st-u-espejo.jpg" alt="Fotograma: el espejo entre las plantas del bosque" loading="lazy" decoding="async"></figure></div></div>
+    <div class="block block--crew"><div><h3 class="label"><svg class="star" aria-hidden="true" viewBox="0 0 100 100"><use href="#star"/></svg><span>Equipo de producción</span></h3><dl class="crew"><div class="crew__row"><dt>Dirección y producción audiovisual</dt><dd>Karen Fernanda Cárdenas Hernández</dd></div><div class="crew__row"><dt>Guion</dt><dd>Michelle Nichole Palacio Hernández</dd></div><div class="crew__row"><dt>Actor</dt><dd>Sebastian Restrepo Gil</dd></div></dl></div><a class="watch" href="https://www.canvaqr.com/RGVhvqZbGE" target="_blank" rel="noopener"><span class="watch__play"><svg class="ico ico--fill" aria-hidden="true" viewBox="0 0 24 24"><path d="M7 4.5v15l13-7.5z"/></svg></span><span class="watch__txt"><b>Ver película</b><small>La última mirada</small></span><svg class="ico" aria-hidden="true" viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></svg></a></div>
+  </div>
+</section>
+<section class="project" id="de-la-mula-al-willys" aria-labelledby="t-de-la-mula-al-willys">
+  <div class="wrap">
+    <div class="p-head">
+      <figure class="poster"><img src="img/poster-willys.jpg" alt="Póster de De la mula al Willys: Don Pablo sonriendo junto a un Willys rojo y una mula frente al pueblo" loading="lazy" decoding="async"></figure>
+      <div class="p-text">
+        <p class="tag">Documental</p>
+        <h2 class="p-title" id="t-de-la-mula-al-willys">De la mula al Willys</h2>
+        
+        <h3 class="label"><svg class="star" aria-hidden="true" viewBox="0 0 100 100"><use href="#star"/></svg><span>Sinopsis</span></h3>
+        <div class="syn"><p>Desde los nueve años, Pablo Emilio Teleche ha recorrido un camino marcado por el esfuerzo, la independencia y el amor profundo por los animales que acompañaron su vida. Criado entre bestias de carga y bajo las enseñanzas de su padre, encontró en las mulas mucho más que un oficio: una pasión que lo llevó a recorrer haciendas y distintas ciudades de Colombia, enfrentarse a las dificultades y construir su propio destino.</p></div>
+        <p class="blurb">En este documental, Don Panlito, a través de sus recuerdos y experiencias, nos acerca a la memoria campesina, a los misterios de las montañas y a la riqueza de un mundo que muchas veces pasa inadvertido. Una historia sobre la evolución de las tradiciones, la capacidad de adaptación y el vínculo entre el ser humano, los animales y la tierra que habita.</p>
+      </div>
+    </div>
+    <div class="block"><h3 class="label"><svg class="star" aria-hidden="true" viewBox="0 0 100 100"><use href="#star"/></svg><span>Preproducción</span></h3><div class="pre"><figure class="paper paper--solo"><img src="img/sb-willys.jpg" alt="Storyboard de De la mula al Willys con seis planos dibujados dentro de un Willys" loading="lazy" decoding="async"></figure></div>
+      <h4 class="sublabel">Moodboard</h4><div class="moodgrid"><figure class="tile mood"><img src="img/mw-1.jpg" alt="Vista aérea del pueblo entre montañas verdes y nubes" loading="lazy" decoding="async"></figure><figure class="tile mood"><img src="img/mw-2.jpg" alt="Dos hombres mayores guiando un caballo por la calle" loading="lazy" decoding="async"></figure><figure class="tile mood"><img src="img/mw-3.jpg" alt="Pueblo con su iglesia visto desde las colinas" loading="lazy" decoding="async"></figure><figure class="tile mood"><img src="img/mw-4.jpg" alt="Hombre en un cobertizo con madera y costales" loading="lazy" decoding="async"></figure><figure class="tile mood"><img src="img/mw-5.jpg" alt="Willys estacionados en la plaza" loading="lazy" decoding="async"></figure><figure class="tile mood"><img src="img/mw-6.jpg" alt="Hombre agachado trabajando con herramientas en un taller" loading="lazy" decoding="async"></figure></div>
+    </div>
+    <div class="block"><h3 class="label"><svg class="star" aria-hidden="true" viewBox="0 0 100 100"><use href="#star"/></svg><span>Making off</span></h3><div class="collage"><figure class="tile half"><img src="img/bo-w2.jpg" alt="Detrás de cámaras: integrante del equipo con el celular junto al Willys" loading="lazy" decoding="async"></figure><figure class="tile half"><img src="img/bo-w4.jpg" alt="Grabación dentro del Willys con el entrevistado al volante" loading="lazy" decoding="async"></figure><figure class="tile full"><img src="img/bo-w1.jpg" alt="Equipo con trípode entrevistando a Don Pablo en un mirador" loading="lazy" decoding="async"></figure><figure class="tile half"><img src="img/bo-w3.jpg" alt="Autorretrato del equipo durante la grabación en el mirador" loading="lazy" decoding="async"></figure><figure class="tile half"><img src="img/bo-w5.jpg" alt="Don Pablo conversando con la directora durante el rodaje" loading="lazy" decoding="async"></figure></div></div>
+    <div class="block"><h3 class="label"><svg class="star" aria-hidden="true" viewBox="0 0 100 100"><use href="#star"/></svg><span>Fotogramas</span></h3><div class="collage collage--stills"><figure class="tile full"><img src="img/st-w-banner.jpg" alt="Fotograma: Don Pablo conduciendo su Willys" loading="lazy" decoding="async"></figure><figure class="tile third"><img src="img/st-w-pablo.jpg" alt="Pablo Emilio Teleche Herrera, 71 años, conductor de Willys y ex arriero de mulas" loading="lazy" decoding="async"><figcaption>Pablo Emilio Teleche Herrera · 71 años · Conductor de Willys y ex arriero de mulas</figcaption></figure><figure class="tile third"><img src="img/st-w-auto.jpg" alt="Fotograma: Don Pablo al volante de su Willys" loading="lazy" decoding="async"></figure><figure class="tile third"><img src="img/st-w-mulas.jpg" alt="Fotograma: arriero con las mulas en el monte" loading="lazy" decoding="async"></figure></div></div>
+    <div class="block block--crew"><div><h3 class="label"><svg class="star" aria-hidden="true" viewBox="0 0 100 100"><use href="#star"/></svg><span>Equipo de producción</span></h3><dl class="crew"><div class="crew__row"><dt>Dirección</dt><dd>Karen Fernanda Cárdenas Hernández</dd></div><div class="crew__row"><dt>Guion</dt><dd>Michelle Nichole Palacio Hernández</dd></div><div class="crew__row"><dt>Producción audiovisual</dt><dd>Miguel Angel Ramirez Garcia</dd></div></dl></div><a class="watch" href="https://www.canvaqr.com/RGVh7-6fCM" target="_blank" rel="noopener"><span class="watch__play"><svg class="ico ico--fill" aria-hidden="true" viewBox="0 0 24 24"><path d="M7 4.5v15l13-7.5z"/></svg></span><span class="watch__txt"><b>Ver película</b><small>De la mula al Willys</small></span><svg class="ico" aria-hidden="true" viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></svg></a></div>
+  </div>
+</section>
+<section class="project" id="cinco-pm" aria-labelledby="t-cinco-pm">
+  <div class="wrap">
+    <div class="p-head">
+      <figure class="poster"><img src="img/poster-0500.jpg" alt="Póster de 05:00 PM: fotograma en blanco y negro de una mujer con la cabeza inclinada entre escombros" loading="lazy" decoding="async"></figure>
+      <div class="p-text">
+        <p class="tag">Documental testimonial · Armenia, Quindío</p>
+        <h2 class="p-title" id="t-cinco-pm">05:00 PM</h2>
+        <p class="p-sub">Memorias del terremoto de 1999</p>
+        <h3 class="label"><svg class="star" aria-hidden="true" viewBox="0 0 100 100"><use href="#star"/></svg><span>Sinopsis</span></h3>
+        <div class="syn"><p>05:00 PM reúne los testimonios de Yohana Andrea Hernández, María del Pilar Díaz y Jorge Hernán Arcila sobre las experiencias que vivieron durante el terremoto de Armenia de 1999. A través de sus recuerdos, el documental recupera distintas miradas sobre lo ocurrido y muestra cómo aquel acontecimiento permanece en la memoria de quienes lo atravesaron. Las entrevistas se entrelazan con imágenes de archivo, registros de prensa y escenas de las calles afectadas, construyendo un recorrido entre la experiencia personal y la memoria colectiva. La pieza invita a escuchar estas voces y a conservar sus historias como parte de la memoria de la región.</p></div>
+        <p class="blurb">05:00 PM es un documental testimonial de Karen Cárdenas que reúne las experiencias de Yohana Andrea Hernández, María del Pilar Díaz y Jorge Hernán Arcila durante el terremoto de Armenia de 1999. Las entrevistas se acompañan de imágenes de archivo y registros de prensa para recuperar fragmentos de lo ocurrido desde la memoria de quienes lo vivieron.</p>
+      </div>
+    </div>
+    <div class="block"><h3 class="label"><svg class="star" aria-hidden="true" viewBox="0 0 100 100"><use href="#star"/></svg><span>Preproducción</span></h3><div class="pre pre--split"><figure class="paper"><img src="img/sb-0500.jpg" alt="Storyboard de 05:00 PM con seis planos dibujados" loading="lazy" decoding="async"></figure><div><ol class="shots"><li class="shot"><span class="shot__code">MS</span><span class="shot__what">Archivo de noticias.</span><span class="shot__sound">Sonido: Audio de noticiero.</span></li><li class="shot"><span class="shot__code">MCU</span><span class="shot__what">Testimonio de Yohana.</span><span class="shot__sound">Sonido: Voz en entrevista.</span></li><li class="shot"><span class="shot__code">MCU</span><span class="shot__what">Testimonio de Jorge.</span><span class="shot__sound">Sonido: Voz en entrevista.</span></li><li class="shot"><span class="shot__code">WS</span><span class="shot__what">Secuelas del terremoto.</span><span class="shot__sound">Sonido: Ambiente / archivo.</span></li><li class="shot"><span class="shot__code">MCU</span><span class="shot__what">Testimonio de María.</span><span class="shot__sound">Sonido: Voz en entrevista.</span></li><li class="shot"><span class="shot__code">WS</span><span class="shot__what">Memoria y reconstrucción.</span><span class="shot__sound">Sonido: Voces y ambiente.</span></li></ol></div></div>
+      <h4 class="sublabel">Moodboard</h4><div class="moodgrid"><figure class="tile mood"><img src="img/m5-prensa.jpg" alt="Presentadora de noticias en un archivo de televisión" loading="lazy" decoding="async"><figcaption>Prensa</figcaption></figure><figure class="tile mood"><img src="img/m5-testimonio.jpg" alt="Mujer entrevistada sentada en una silla tallada" loading="lazy" decoding="async"><figcaption>Testimonio</figcaption></figure><figure class="tile mood"><img src="img/m5-memoria.jpg" alt="Mujer mayor con gafas durante su entrevista" loading="lazy" decoding="async"><figcaption>Memoria</figcaption></figure><figure class="tile mood"><img src="img/m5-voces.jpg" alt="Hombre con gorra durante su entrevista" loading="lazy" decoding="async"><figcaption>Voces</figcaption></figure><figure class="tile mood"><img src="img/m5-armenia.jpg" alt="Fachada con portón en una calle de Armenia" loading="lazy" decoding="async"><figcaption>Armenia</figcaption></figure><figure class="tile mood"><img src="img/m5-rescate.jpg" alt="Personas entre escombros en labores de rescate" loading="lazy" decoding="async"><figcaption>Rescate</figcaption></figure></div>
+    </div>
+    
+    <div class="block"><h3 class="label"><svg class="star" aria-hidden="true" viewBox="0 0 100 100"><use href="#star"/></svg><span>Voces del documental</span></h3><div class="collage collage--stills"><figure class="tile half"><img src="img/v-yohana.jpg" alt="Yohana Andrea Hernández durante su entrevista" loading="lazy" decoding="async"><figcaption>Yohana Andrea Hernández · Aux. enfermería</figcaption></figure><figure class="tile half"><img src="img/v-maria.jpg" alt="María del Pilar Díaz durante su entrevista" loading="lazy" decoding="async"><figcaption>María del Pilar Díaz · Exadministradora</figcaption></figure><figure class="tile full"><img src="img/v-archivo.jpg" alt="Imagen de archivo de los daños y el rescate en Armenia, 1999" loading="lazy" decoding="async"><figcaption>Archivo histórico · Armenia, 1999. Imágenes de los daños y labores de rescate incluidas en el documental.</figcaption></figure></div></div>
+    <div class="block block--crew"><div><h3 class="label"><svg class="star" aria-hidden="true" viewBox="0 0 100 100"><use href="#star"/></svg><span>Equipo de producción</span></h3><dl class="crew"><div class="crew__row"><dt>Dirección de fotografía y producción</dt><dd>Karen Fernanda Cárdenas Hernández</dd></div><div class="crew__row"><dt>Guion</dt><dd>Michelle Nichole Palacio</dd></div><div class="crew__row"><dt>Entrevistados</dt><dd>Yohana Andrea Hernández</dd><dd>María del Pilar Díaz</dd><dd>Jorge Hernán Arcila</dd></div></dl></div><a class="watch" href="https://www.canvaqr.com/RGYSz_S15r" target="_blank" rel="noopener"><span class="watch__play"><svg class="ico ico--fill" aria-hidden="true" viewBox="0 0 24 24"><path d="M7 4.5v15l13-7.5z"/></svg></span><span class="watch__txt"><b>Ver película</b><small>05:00 PM</small></span><svg class="ico" aria-hidden="true" viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></svg></a></div>
+  </div>
+</section>
+<section class="project" id="relatos-en-la-cordillera" aria-labelledby="t-relatos-en-la-cordillera">
+  <div class="wrap">
+    <div class="p-head">
+      <figure class="poster"><img src="img/poster-relatos.jpg" alt="Póster de Relatos en la cordillera: vista del pueblo de Buenavista entre la niebla y los cafetales" loading="lazy" decoding="async"></figure>
+      <div class="p-text">
+        <p class="tag">Documental · Buenavista, Quindío</p>
+        <h2 class="p-title" id="t-relatos-en-la-cordillera">Relatos en la cordillera</h2>
+        <p class="p-sub">Historias entre niebla y café</p>
+        <h3 class="label"><svg class="star" aria-hidden="true" viewBox="0 0 100 100"><use href="#star"/></svg><span>Sinopsis</span></h3>
+        <div class="syn"><p>Entre las montañas de Buenavista, Quindío, sobreviven historias que se resisten al olvido. Relatos de túneles ocultos, guacas, brujas y presencias inexplicables forman parte de la memoria oral de una comunidad que ha transmitido sus creencias, temores y experiencias de generación en generación.</p></div>
+        <p class="blurb">El documental es un viaje íntimo por los mitos, leyendas y vivencias inexplicables que han marcado a generaciones de buenavisteños. A través de entrevistas con sus habitantes, el documental revela cómo estas historias han moldeado la identidad del pueblo. Una mirada profunda al imaginario colectivo de una comunidad que, entre realidad y fantasía, mantiene vivo el espíritu de sus raíces.</p>
+      </div>
+    </div>
+    <div class="block"><h3 class="label"><svg class="star" aria-hidden="true" viewBox="0 0 100 100"><use href="#star"/></svg><span>Preproducción</span></h3><div class="pre pre--split"><figure class="paper"><img src="img/sb-relatos.jpg" alt="Storyboard de Relatos en la cordillera con seis planos dibujados" loading="lazy" decoding="async"></figure><div><ol class="shots"><li class="shot"><span class="shot__code">PG</span><span class="shot__what">Presentación del documental.</span><span class="shot__sound">Sonido: Voz del presentador.</span></li><li class="shot"><span class="shot__code">PM</span><span class="shot__what">Testimonio en el parque.</span><span class="shot__sound">Sonido: Voz del entrevistado y ambiente.</span></li><li class="shot"><span class="shot__code">PM</span><span class="shot__what">Relato de la habitante.</span><span class="shot__sound">Sonido: Voz y ambiente interior.</span></li><li class="shot"><span class="shot__code">PM</span><span class="shot__what">Testimonio desde la cafetería.</span><span class="shot__sound">Sonido: Voz y ambiente del lugar.</span></li><li class="shot"><span class="shot__code">PM</span><span class="shot__what">Relato con la cordillera al fondo.</span><span class="shot__sound">Sonido: Voz, viento suave.</span></li><li class="shot"><span class="shot__code">PM</span><span class="shot__what">Testimonio y gestos al narrar.</span><span class="shot__sound">Sonido: Voz del entrevistado.</span></li></ol></div></div>
+      <h4 class="sublabel">Moodboard</h4><div class="moodgrid"><figure class="tile mood"><img src="img/mr-1.jpg" alt="Hombre mayor sonriendo con las colinas de fondo" loading="lazy" decoding="async"></figure><figure class="tile mood"><img src="img/mr-2.jpg" alt="Torre de la iglesia de fachada turquesa contra el cielo azul" loading="lazy" decoding="async"></figure><figure class="tile mood"><img src="img/mr-3.jpg" alt="Hombre con delantal sonriendo en una cafetería" loading="lazy" decoding="async"></figure><figure class="tile mood"><img src="img/mr-4.jpg" alt="Mujer mayor sentada con una polo lila" loading="lazy" decoding="async"></figure><figure class="tile mood"><img src="img/mr-5.jpg" alt="Camino de pasto entre árboles" loading="lazy" decoding="async"></figure><figure class="tile mood"><img src="img/mr-6.jpg" alt="Hombre mayor con gafas mirando hacia arriba en un parque" loading="lazy" decoding="async"></figure></div>
+    </div>
+    <div class="block"><h3 class="label"><svg class="star" aria-hidden="true" viewBox="0 0 100 100"><use href="#star"/></svg><span>Making off</span></h3><div class="collage"><figure class="tile half"><img src="img/bo-r2.jpg" alt="Entrevista en una cafetería con la cámara sobre trípode" loading="lazy" decoding="async"></figure><figure class="tile half"><img src="img/bo-r4.jpg" alt="Entrevista en el parque con la cámara sobre trípode" loading="lazy" decoding="async"></figure><figure class="tile full"><img src="img/bo-r1.jpg" alt="Equipo grabando a un entrevistado en la plaza" loading="lazy" decoding="async"></figure><figure class="tile half"><img src="img/bo-r3.jpg" alt="Entrevista a una habitante en su casa" loading="lazy" decoding="async"></figure><figure class="tile half"><img src="img/bo-r5.jpg" alt="Entrevista a una habitante junto al equipo de sonido" loading="lazy" decoding="async"></figure></div></div>
+    <div class="block"><h3 class="label"><svg class="star" aria-hidden="true" viewBox="0 0 100 100"><use href="#star"/></svg><span>Fotogramas</span></h3><div class="collage collage--stills"><figure class="tile full"><img src="img/st-r-banner.jpg" alt="Fotograma: persona entrando por una reja azul hacia el parque" loading="lazy" decoding="async"></figure><figure class="tile third"><img src="img/st-r-cafe.jpg" alt="Fotograma: entrevistado en la cafetería" loading="lazy" decoding="async"></figure><figure class="tile third"><img src="img/st-r-mujer.jpg" alt="Fotograma: habitante durante su relato" loading="lazy" decoding="async"></figure><figure class="tile third"><img src="img/st-r-parque.jpg" alt="Fotograma: entrevistado en el parque" loading="lazy" decoding="async"></figure></div></div>
+    <div class="block block--crew"><div><h3 class="label"><svg class="star" aria-hidden="true" viewBox="0 0 100 100"><use href="#star"/></svg><span>Equipo de producción</span></h3><dl class="crew"><div class="crew__row"><dt>Dirección</dt><dd>Karen Fernanda Cárdenas Hernández</dd></div><div class="crew__row"><dt>Guion</dt><dd>Jaime Andrés Mesa Obando</dd></div><div class="crew__row"><dt>Producción audiovisual</dt><dd>Samuel Zapata Cardona</dd></div></dl></div><a class="watch" href="https://www.canvaqr.com/RGViE7919m" target="_blank" rel="noopener"><span class="watch__play"><svg class="ico ico--fill" aria-hidden="true" viewBox="0 0 24 24"><path d="M7 4.5v15l13-7.5z"/></svg></span><span class="watch__txt"><b>Ver película</b><small>Relatos en la cordillera</small></span><svg class="ico" aria-hidden="true" viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></svg></a></div>
+  </div>
+</section></main>
+<section class="stage contact" id="contacto" aria-labelledby="t-contacto">
+  <i class="planet planet--a"></i><i class="planet planet--b"></i><i class="vf vf--tl"></i><i class="vf vf--tr"></i><i class="vf vf--bl"></i><i class="vf vf--br"></i>
+  <div class="wrap">
+    <img class="logo" src="img/logo.png" alt="KAF Creative Studio" width="640" height="360">
+    <div class="divider" aria-hidden="true"><svg class="star" aria-hidden="true" viewBox="0 0 100 100"><use href="#star"/></svg></div>
+    <h2 class="h2" id="t-contacto">Contacto</h2>
+    <ul class="clist">
+      <li class="crow"><span class="crow__ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg></span><span class="crow__body"><small>Teléfono</small><span class="crow__val" id="c-tel">+57 301 636 4825</span></span><a class="mini" href="tel:+573016364825" target="_blank" rel="noopener">Llamar</a><button class="mini" type="button" data-copy="#c-tel">Copiar</button></li>
+      <li class="crow"><span class="crow__ico"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="2.5" width="19" height="19" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.6" cy="6.4" r=".9"/></svg></span><span class="crow__body"><small>Instagram</small><span class="crow__val" id="c-ig">@kaf.create_</span></span><a class="mini" href="https://www.instagram.com/kaf.create_/" target="_blank" rel="noopener">Abrir</a><button class="mini" type="button" data-copy="#c-ig">Copiar</button></li>
+      <li class="crow"><span class="crow__ico"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="4.5" width="19" height="15" rx="2"/><path d="m3 6.5 9 6.5 9-6.5"/></svg></span><span class="crow__body"><small>Correo</small><span class="crow__val" id="c-mail">contacto.kafcreatestudio@gmail.com</span></span><a class="mini" href="mailto:contacto.kafcreatestudio@gmail.com" target="_blank" rel="noopener">Escribir</a><button class="mini" type="button" data-copy="#c-mail">Copiar</button></li>
+    </ul>
+  </div>
+</section>
+<footer class="foot"><div class="wrap">© 2026 KAF Creative Studio · Karen Fernanda Cárdenas Hernández</div></footer><script>
+(function(){
+  var btns=document.querySelectorAll('[data-copy]');
+  function pick(el){try{var r=document.createRange();r.selectNodeContents(el);var s=window.getSelection();s.removeAllRanges();s.addRange(r);}catch(e){}}
+  btns.forEach(function(b){
+    b.addEventListener('click',function(){
+      var el=document.querySelector(b.getAttribute('data-copy'));
+      if(!el)return;
+      var txt=el.textContent.trim(), label=b.textContent;
+      function done(ok){ if(!ok)pick(el); b.textContent=ok?'Copiado':'Selecciona y copia'; setTimeout(function(){b.textContent=label;},1800); }
+      try{
+        if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(txt).then(function(){done(true);},function(){done(false);});}
+        else{done(false);}
+      }catch(err){done(false);}
+    });
+  });
+})();
+</script>
+</body></html>
